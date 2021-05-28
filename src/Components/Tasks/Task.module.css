@@ -1,3 +1,52 @@
-.Task{
+
+.Search, .inptTask {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.inptTask{
+    border-top: 1px solid grey;
+}
+
+
+.Task {
+    cursor: pointer;
     background: #fff;
+    padding: 25px;
+    position: relative;
+    border-top: 1px solid grey;
+}
+
+.Task:hover{
+    background: #ececec;
+}
+.Task.Completed:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15px;
+    right: 25px;
+    height: 1px;
+    background: black;
+    top: 50%;
+}
+
+.Task.Completed {
+    background: rgba(0, 255, 0, .3);
+}
+
+.btnAdd {
+    width: 50%;
+    height: 40px;
+    border: none;
+    color: white;
+    background: green;
+}
+
+.btnClear {
+    height: 40px;
+    width: 50%;
+    border: none;
+    color: white;
+    background: red;
 }

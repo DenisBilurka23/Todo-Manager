@@ -1,0 +1,7 @@
+.bin{
+    float: right;
+    margin-right: 10px;
+}
+.bin:hover{
+    color: red;
+}
